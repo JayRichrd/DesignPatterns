@@ -58,3 +58,5 @@ hs_err_pid*
 out/production/classes/META-INF/
 src/main/resources/
 src/test/
+/.idea/
+/out/
