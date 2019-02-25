@@ -28,5 +28,5 @@ abstract public class Operation {
      *
      * @return
      */
-    abstract double getResult();
+    protected abstract double getResult();
 }
