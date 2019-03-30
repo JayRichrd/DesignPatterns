@@ -24,7 +24,7 @@ public class CashierContext {
      * @param totalPrice 商品总价
      * @return 返回真正需要支付的金额
      */
-    public double onCashier(double totalPrice) {
+    public double onCash(double totalPrice) {
         return cashier.onCash(totalPrice);
     }
 

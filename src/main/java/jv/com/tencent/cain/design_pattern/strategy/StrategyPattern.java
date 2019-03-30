@@ -17,7 +17,7 @@ public class StrategyPattern {
                 setCashierStrategy(AbstractCashier.CashierStrategy.CASHIER_DISCOUNT).
                 setDiscountRate(discountRate).
                 build();
-        result = discountCashierContext.onCashier(totalPrice);
+        result = discountCashierContext.onCash(totalPrice);
         System.out.println("discount result: " + result);
 
         CashierContext moneyOffCashierContext = new CashierContext.Builder().
@@ -25,7 +25,7 @@ public class StrategyPattern {
                 setMoneyConditon(moneyCondition).
                 setMoneyOff(moneyOff).
                 build();
-        result = moneyOffCashierContext.onCashier(totalPrice);
+        result = moneyOffCashierContext.onCash(totalPrice);
         System.out.println("moneyOff result: " + result);
     }
 }
