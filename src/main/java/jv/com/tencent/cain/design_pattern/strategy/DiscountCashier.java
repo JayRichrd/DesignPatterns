@@ -6,7 +6,7 @@ package jv.com.tencent.cain.design_pattern.strategy;
  * @desc : 打折结算
  */
 public class DiscountCashier extends AbstractCashier {
-    public static final int DEFAULT_DISCOUNT_RATE = 1;
+    private static final int DEFAULT_DISCOUNT_RATE = 1;
     // 折扣
     private double discountRate = DEFAULT_DISCOUNT_RATE;
 

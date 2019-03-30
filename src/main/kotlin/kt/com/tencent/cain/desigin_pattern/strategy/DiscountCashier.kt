@@ -3,10 +3,10 @@ package kt.com.tencent.cain.desigin_pattern.strategy
 /**
  * @author : jiangyu
  * @date   : 2019-03-30
- * @desc   : xxx
+ * @strategyType   : xxx
  * @param discountRate 折扣
  */
-class DiscountCashier(val discountRate: Double = 1.0) : AbstractCashier() {
+class DiscountCashier(private val discountRate: Double = 1.0) : AbstractCashier() {
 
     /**
      * 结账

@@ -33,7 +33,7 @@ public class CashierContext {
      * {@link AbstractCashier.CashierStrategy}
      */
     private void action() {
-        System.out.println("cashierStategy: " + cashierStrategy.desc);
+        System.out.println("cashierStategy: " + cashierStrategy.strategyType);
         switch (cashierStrategy) {
             case CASHIER_DISCOUNT:
                 cashier = new DiscountCashier(discountRate);

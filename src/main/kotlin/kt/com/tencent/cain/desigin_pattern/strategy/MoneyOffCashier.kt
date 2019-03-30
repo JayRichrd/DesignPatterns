@@ -3,11 +3,11 @@ package kt.com.tencent.cain.desigin_pattern.strategy
 /**
  * @author : jiangyu
  * @date   : 2019-03-30
- * @desc   : xxx
+ * @strategyType   : xxx
  * @param moneyCondition 满减条件金额
  * @param moneyOff 达到满减金额后减去的金额
  */
-class MoneyOffCashier(val moneyCondition: Double = 1.0, val moneyOff: Double = 0.0) : AbstractCashier() {
+class MoneyOffCashier(private val moneyCondition: Double = 1.0, private val moneyOff: Double = 0.0) : AbstractCashier() {
 
     /**
      * 结账
@@ -17,7 +17,7 @@ class MoneyOffCashier(val moneyCondition: Double = 1.0, val moneyOff: Double = 0
      */
     override fun onCash(totalPrice: Double): Double {
         println("totalPrice: $totalPrice, moneyConditon: $moneyCondition, moneyOff: $moneyOff")
-        var result: Double
+        val result: Double
         if (totalPrice >= moneyCondition && moneyCondition >= moneyOff) {
             result = totalPrice - (totalPrice / moneyCondition).toInt() * moneyOff
         } else {

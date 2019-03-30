@@ -3,9 +3,9 @@ package kt.com.tencent.cain.desigin_pattern.strategy
 /**
  * @author : jiangyu
  * @date   : 2019-03-30
- * @desc   : xxx
+ * @strategyType   : xxx
  */
-fun main(args: Array<String>) {
+fun main() {
     val totalPrice = 1200.0
     val discountRate = 0.78
     val moneyCondition = 350.0

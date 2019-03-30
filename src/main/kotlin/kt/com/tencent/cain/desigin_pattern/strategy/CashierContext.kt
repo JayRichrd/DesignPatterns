@@ -3,7 +3,7 @@ package kt.com.tencent.cain.desigin_pattern.strategy
 /**
  * @author : jiangyu
  * @date   : 2019-03-30
- * @desc   : xxx
+ * @strategyType   : xxx
  * @param cashierStrategy 结束啦策略
  * @param discountRate 折扣
  * @param moneyCondition 满减条件金额
@@ -15,29 +15,29 @@ class CashierContext(
     var moneyCondition: Double = 1.0,
     var moneyOff: Double = 0.0) {
 
-    var cashier: AbstractCashier = DiscountCashier()
+    private var cashier: AbstractCashier = DiscountCashier()
 
     fun onCash(totalPrice: Double) = cashier.onCash(totalPrice)
 
     private fun action(): CashierContext = when (cashierStrategy) {
         AbstractCashier.CashierStrategy.CASHIER_DISCOUNT -> {
             cashier = DiscountCashier(discountRate)
-            println("${cashierStrategy.desc}")
+            println(cashierStrategy.strategyType)
             this
         }
         AbstractCashier.CashierStrategy.CASHIER_MONEY_OFF -> {
             cashier = MoneyOffCashier(moneyCondition, moneyOff)
-            println("${cashierStrategy.desc}")
+            println(cashierStrategy.strategyType)
             this
         }
     }
 
 
     class Builder {
-        var cashierStrategy: AbstractCashier.CashierStrategy = AbstractCashier.CashierStrategy.CASHIER_DISCOUNT
-        var discountRate: Double = 1.0
-        var moneyCondition: Double = 1.0
-        var moneyOff: Double = 0.0
+        private var cashierStrategy: AbstractCashier.CashierStrategy = AbstractCashier.CashierStrategy.CASHIER_DISCOUNT
+        private var discountRate: Double = 1.0
+        private var moneyCondition: Double = 1.0
+        private var moneyOff: Double = 0.0
 
         fun cashierStrategy(cashierStrategy: AbstractCashier.CashierStrategy) =
             apply { this.cashierStrategy = cashierStrategy }

@@ -11,15 +11,13 @@ public abstract class AbstractCashier {
      * 结账算法
      */
     enum CashierStrategy {
-        CASHIER_DISCOUNT("打折促销", "打折策略"),
-        CASHIER_MONEY_OFF("满减", "满减策略");
+        CASHIER_DISCOUNT("打折促销"),
+        CASHIER_MONEY_OFF("满减");
 
         String strategyType;
-        String desc;
 
-        CashierStrategy(String strategyType, String desc) {
+        CashierStrategy(String strategyType) {
             this.strategyType = strategyType;
-            this.desc = desc;
         }
     }
 

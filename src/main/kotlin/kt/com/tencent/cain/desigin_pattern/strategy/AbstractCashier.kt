@@ -3,15 +3,15 @@ package kt.com.tencent.cain.desigin_pattern.strategy
 /**
  * @author : jiangyu
  * @date   : 2019-03-30
- * @desc   : xxx
+ * @strategyType   : xxx
  */
 abstract class AbstractCashier {
     /**
      * 结账算法
      */
-    enum class CashierStrategy(val desc: String, val strategyType: String) {
-        CASHIER_DISCOUNT("打折促销", "打折策略"),
-        CASHIER_MONEY_OFF("满减", "满减策略")
+    enum class CashierStrategy(val strategyType: String) {
+        CASHIER_DISCOUNT("打折促销"),
+        CASHIER_MONEY_OFF("满减")
     }
 
     /**
