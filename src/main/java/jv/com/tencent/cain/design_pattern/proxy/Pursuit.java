@@ -5,8 +5,8 @@ package jv.com.tencent.cain.design_pattern.proxy;
  * @date 2019-05-17
  * RealSubject
  */
-public class Pursuit implements GiveGift {
-    SchoolGirl schoolGirl;
+public class Pursuit implements IGiveGift {
+    private SchoolGirl schoolGirl;
 
     public Pursuit(SchoolGirl schoolGirl) {
         this.schoolGirl = schoolGirl;
@@ -16,18 +16,30 @@ public class Pursuit implements GiveGift {
     }
 
     @Override
-    public void GiveDolls() {
-        System.out.println(schoolGirl.getName() + "送你洋娃娃");
+    public void giveDolls() {
+        String name = "";
+        if (schoolGirl != null) {
+            name = schoolGirl.getName();
+        }
+        System.out.println(name + "送你洋娃娃🤩");
     }
 
     @Override
-    public void GiveFlowers() {
-        System.out.println(schoolGirl.getName() + "送你鲜花💐");
+    public void giveFlowers() {
+        String name = "";
+        if (schoolGirl != null) {
+            name = schoolGirl.getName();
+        }
+        System.out.println(name + "送你鲜花💐");
     }
 
     @Override
-    public void GiveChocolate() {
-        System.out.println(schoolGirl.getName() + "巧克力🍫");
+    public void giveChocolate() {
+        String name = "";
+        if (schoolGirl != null) {
+            name = schoolGirl.getName();
+        }
+        System.out.println(name + "巧克力🍫");
 
     }
 }
