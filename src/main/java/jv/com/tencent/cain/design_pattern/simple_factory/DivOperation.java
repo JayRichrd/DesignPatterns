@@ -7,7 +7,7 @@ package jv.com.tencent.cain.design_pattern.simple_factory;
  */
 public class DivOperation extends Operation {
     @Override
-    protected double getResult() {
+    public double getResult() {
         if (numB == 0.0) {
             throw new IllegalArgumentException("被除数不能为0!");
         } else {

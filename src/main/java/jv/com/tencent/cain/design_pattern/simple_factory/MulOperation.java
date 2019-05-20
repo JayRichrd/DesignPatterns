@@ -7,7 +7,7 @@ package jv.com.tencent.cain.design_pattern.simple_factory;
  */
 public class MulOperation extends Operation {
     @Override
-    protected double getResult() {
+    public double getResult() {
         return numA * numB;
     }
 }

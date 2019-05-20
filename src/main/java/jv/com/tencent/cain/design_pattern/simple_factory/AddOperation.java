@@ -8,7 +8,7 @@ package jv.com.tencent.cain.design_pattern.simple_factory;
 public class AddOperation extends Operation {
 
     @Override
-    protected double getResult() {
-        return numA + numA;
+    public double getResult() {
+        return numA + numB;
     }
 }

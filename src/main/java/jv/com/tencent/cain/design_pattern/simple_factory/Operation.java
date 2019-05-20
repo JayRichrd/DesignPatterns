@@ -14,6 +14,14 @@ abstract public class Operation {
      * 操作数b
      */
     public double numB;
+    /**
+     * 运算符号
+     */
+    public String operationSymbol;
+    /**
+     * 运算名
+     */
+    public String operationName;
 
     public double getNumA() {
         return numA;
@@ -28,5 +36,5 @@ abstract public class Operation {
      *
      * @return
      */
-    protected abstract double getResult();
+    public abstract double getResult();
 }
