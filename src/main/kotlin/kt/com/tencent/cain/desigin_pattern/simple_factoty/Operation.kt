@@ -8,5 +8,8 @@ package kt.com.tencent.cain.desigin_pattern.simple_factoty
 abstract class Operation {
     var numA: Double = 0.0
     var numB: Double = 0.0
+    var operationSymbol: String = ""
+    var operationName: String = ""
+
     abstract fun getResult(): Double
 }

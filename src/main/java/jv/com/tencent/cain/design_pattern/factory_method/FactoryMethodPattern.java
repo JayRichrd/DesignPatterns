@@ -1,6 +1,5 @@
 package jv.com.tencent.cain.design_pattern.factory_method;
 
-import jv.com.tencent.cain.design_pattern.simple_factory.Operation;
 
 /**
  * @author cainjiang

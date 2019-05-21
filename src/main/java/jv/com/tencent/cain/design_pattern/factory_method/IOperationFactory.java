@@ -1,6 +1,5 @@
 package jv.com.tencent.cain.design_pattern.factory_method;
 
-import jv.com.tencent.cain.design_pattern.simple_factory.Operation;
 
 /**
  * @author cainjiang
@@ -13,19 +12,5 @@ public interface IOperationFactory {
      * @return
      */
     public Operation createOpration();
-
-    /**
-     * 返回运算的符号
-     *
-     * @return
-     */
-    String getOperationSymbol();
-
-    /**
-     * 返回运算的名字
-     *
-     * @return
-     */
-    String getOperationName();
 
 }
