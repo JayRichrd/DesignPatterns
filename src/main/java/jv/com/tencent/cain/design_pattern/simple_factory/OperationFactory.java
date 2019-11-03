@@ -11,9 +11,13 @@ public class OperationFactory {
      * 操作类型
      */
     enum OperationType {
+        //加法
         OPERATION_ADD("+", "加法"),
+        //减法
         OPERATION_SUB("-", "减法"),
+        //乘法
         OPERATION_MUL("*", "乘法"),
+        //除法
         OPERATION_DIV("/", "除法");
 
         public String operationType;

@@ -1,4 +1,4 @@
-package jv.com.tencent.cain.design_pattern.simple_factory;
+package jv.com.tencent.cain.design_pattern.factory_method;
 
 /**
  * @author cainjiang
