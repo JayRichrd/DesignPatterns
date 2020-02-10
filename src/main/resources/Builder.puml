@@ -1,5 +1,5 @@
+#构建者设计模式
 @startuml
-
 class Product
 abstract class Builder{
     + {abstract} void buildPart()
