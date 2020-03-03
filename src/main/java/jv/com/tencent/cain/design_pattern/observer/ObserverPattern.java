@@ -3,7 +3,7 @@ package jv.com.tencent.cain.design_pattern.observer;
 /**
  * @author : jiangyu
  * @date : 2020/3/3
- * @desc : xxx
+ * @desc : 观察者设计模式
  */
 public class ObserverPattern {
     public static void main(String[] args) {

@@ -3,7 +3,7 @@ package kt.com.tencent.cain.desigin_pattern.observer
 /**
  * @author : jiangyu
  * @date   : 2020/3/3
- * @desc   : xxx
+ * @desc   : 观察者设计模式
  */
 fun main() {
     val subject = ConcreteSubject()
