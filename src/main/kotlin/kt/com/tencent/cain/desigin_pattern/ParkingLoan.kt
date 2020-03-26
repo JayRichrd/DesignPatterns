@@ -1,6 +1,7 @@
 package kt.com.tencent.cain.desigin_pattern
 
 import kotlin.math.abs
+import kotlin.math.pow
 
 /**
  * @author : jiangyu
@@ -50,5 +51,4 @@ fun main() {
     println("rationOfMonth = $finalRationOfMonth, rationOfYear = ${finalRationOfMonth * 12.toDouble()}, exceed limit: ${count >= LIMIT}")
 }
 
-fun algFunc(rationOfMonth: Double): Double =
-    (REPAY_OF_MONTH - SUM * rationOfMonth) * Math.pow(1.toDouble() + rationOfMonth, MONTH_NUM)
+fun algFunc(rationOfMonth: Double): Double = (REPAY_OF_MONTH - SUM * rationOfMonth) * (1.toDouble() + rationOfMonth).pow(MONTH_NUM)
