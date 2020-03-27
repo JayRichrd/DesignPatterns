@@ -34,7 +34,7 @@ fun main() {
     var secondDiff = firstDiff
     var thirdDiff = secondDiff
     var count = 0
-    println("第${count + 1}次：rationOfMonth = $rationOfMonth, curRepayOfMonth = $curRepayOfMonth, diff = $secondDiff")
+    println("第${count + 1}次：rationOfMonth = $rationOfMonth, curRepayOfMonth = $curRepayOfMonth, diff = $thirdDiff")
     /**
      * 函数趋势：先减后升，找到波谷那个值，就是我们想要的
      */
@@ -46,7 +46,7 @@ fun main() {
         firstDiff = secondDiff
         secondDiff = thirdDiff
         thirdDiff = abs(curRepayOfMonth - REPAY_OF_MONTH)
-        println("第${count + 1}次：rationOfMonth = $rationOfMonth, curRepayOfMonth = $curRepayOfMonth, diff = $secondDiff")
+        println("第${count + 1}次：rationOfMonth = $rationOfMonth, curRepayOfMonth = $curRepayOfMonth, diff = $thirdDiff")
     }
     println("rationOfMonth = $finalRationOfMonth, rationOfYear = ${finalRationOfMonth * 12.toDouble()}, exceed limit: ${count >= LIMIT}")
 }
