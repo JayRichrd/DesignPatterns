@@ -61,3 +61,4 @@ src/test/
 /out/
 /local.properties
 local.properties
+/build/
