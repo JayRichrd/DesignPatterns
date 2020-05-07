@@ -1,4 +1,4 @@
-package kt.com.tencent.cain.desigin_pattern.Memento
+package kt.com.tencent.cain.desigin_pattern.memento
 
 /**
  * @author : jiangyu
