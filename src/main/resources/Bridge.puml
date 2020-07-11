@@ -1,3 +1,4 @@
+#桥接设计模式
 @startuml
 abstract class Abstraction{
     + {abstract} void operation()
