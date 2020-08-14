@@ -7,7 +7,7 @@ import java.util.*
  * @date 2020/8/14
  */
 class FlyWeightFactory {
-    val flyWeights by lazy {
+    private val flyWeights by lazy {
         hashMapOf<String, BaseFlyWeight>()
     }
 

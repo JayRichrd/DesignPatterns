@@ -8,8 +8,8 @@ import java.util.Locale;
  * @date 2020/8/14
  */
 public class FlyWeightFactory {
-    private HashMap<String, AbstractFlyWeight> flyWeights = new HashMap<>();
-    private AbstractFlyWeight unSharedFlyWeight = new UnSharedFlyWeight();
+    private final HashMap<String, AbstractFlyWeight> flyWeights = new HashMap<>();
+    private final AbstractFlyWeight unSharedFlyWeight = new UnSharedFlyWeight();
 
     public AbstractFlyWeight getUnSharedFlyWeight() {
         return unSharedFlyWeight;
@@ -23,7 +23,7 @@ public class FlyWeightFactory {
 
     public AbstractFlyWeight getFlyWeight(String key) {
         key = key.toUpperCase(Locale.ENGLISH);
-        AbstractFlyWeight flyWeight = null;
+        AbstractFlyWeight flyWeight;
         flyWeight = flyWeights.get(key);
         return flyWeight;
     }

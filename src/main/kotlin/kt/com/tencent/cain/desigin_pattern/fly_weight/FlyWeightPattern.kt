@@ -24,7 +24,7 @@ fun main() {
     unSharedFlyWeight.operation(externalState--)
 
     val flyWeightB1 = flyWeightFactory.getFlyWeightByName("b")
-    flyWeightB1?.operation(externalState--)
+    flyWeightB1?.operation(externalState)
 
     println("flyweiht count = ${flyWeightFactory.getFlyWeightCount()}")
 
